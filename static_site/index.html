@@ -5,6 +5,7 @@
 
       <title>Static, Responsive Site</title>
       <link rel="stylesheet" href="main.css" type="text/css"/>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     </head>
     <body>
         <header class="nav-group">
@@ -57,11 +58,11 @@
           </div>
           <div class="pics">
             <img class="thumbnail" src="camping4.jpg" />
-            <a id="join"></a>
             <p>Campfire Stories & S'mores. Classic.</p>
           </div>
         </div>
         <div class="call-to-action">
+          <a id="join"></a>
           <h4 class="banner">Join for FREE</h4>
           <form class="signup-valid">
             <h3 class="required-header">All fields required</h3>
@@ -79,5 +80,23 @@
             <!-- http://www.w3schools.com/html/html_entities.asp -->
             <p>Copyright &copy; 2016</p>
         </footer>
+        <script>
+        $(document).ready(function(){
+          $("a").on('click', function(event) {
+              if (this.hash !== "") {
+              event.preventDefault();
+
+              var hash = this.hash;
+
+              $('html, body').animate({
+                scrollTop: $(hash).offset().top
+              }, 800, function(){
+
+                window.location.hash = hash;
+              });
+            }
+          });
+        });
+        </script>
     </body>
 </html>
