@@ -250,3 +250,18 @@
   margin-top: 95%;
   width: 100%;
 }
+
+/* media queries for responsiveness */
+
+@media (max-width: 1154px) {
+  .aside1 {
+    display: block;
+    float: none;
+    margin: 0 auto;
+    margin-top: 10%;
+  }
+  .welcome {
+    display: block;
+    margin: 0 auto;
+  }
+}
