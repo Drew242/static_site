@@ -260,6 +260,9 @@
     float: none;
     margin: 0 auto;
     margin-top: 10%;
+    max-width: 80%;
+    text-align: center;
+    overflow: hidden;
   }
   .welcome {
     display: block;
@@ -272,6 +275,7 @@
     float: none;
     display: block;
     margin: 0 auto;
+    max-width: 90%;
     margin-bottom: 6%;
     overflow: hidden;
   }
