@@ -162,6 +162,7 @@
   margin: 2%;
   min-height: 10%;
   max-height: 50%;
+  overflow: hidden;
   box-shadow: 2rem 2rem 2rem 0 #999;
 }
 
@@ -263,5 +264,28 @@
   .welcome {
     display: block;
     margin: 0 auto;
+  }
+}
+
+@media (max-width: 830px) {
+  .community .main-content {
+    float: none;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 6%;
+    overflow: hidden;
+  }
+  .community .camping0 {
+    float: none;
+    display: black;
+  }
+}
+
+@media (max-width: 685px) {
+  .required-header, .form-label, .text-input, .button {
+    display: block;
+    float: none;
+    text-align: center;
+    margin: 0 auto 5%;
   }
 }
